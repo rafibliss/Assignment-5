@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav"
 import Teachnologies from "./components/Technologies";
+import Footer from "./components/Footer";
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Suspense fallback={<h2>Loading Technologies...</h2>}>
         <Teachnologies techPromise={techPromise}></Teachnologies>
       </Suspense>
+      <Footer></Footer>
 
     </>
   )
