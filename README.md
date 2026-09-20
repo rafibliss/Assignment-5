@@ -1,32 +1,43 @@
-# React + TypeScript + Vite
+# 🚀 Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, interactive web application designed to help developers explore, compare, and build their ideal technology stack for upcoming projects[cite: 8, 18].
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 About The Project
 
-## React Compiler
+**Dev Stack** is an intuitive platform where developers can browse various technologies, frameworks, databases, and tools across different categories[cite: 8]. Users can compare specs, levels, and ratings, and dynamically assemble their custom tech stack with a single click[cite: 4, 8].
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* **Frontend:** React.js[cite: 2]
+* **Language:** TypeScript[cite: 2]
+* **Styling:** Tailwind CSS[cite: 2]
+* **Build Tool:** Vite[cite: 14]
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## ✨ Key Features
+
+1. **Interactive Stack Builder**: Seamlessly add or remove frontend, backend, and database tools to your personalized stack sidebar in real time.
+2. **Duplicate Prevention & Smart Controls**: Prevents adding duplicate items to your stack while dynamically disabling the "Add to Stack" button with visual feedback once selected.
+3. **Dynamic Responsive Layout**: Built with a sleek 12-column grid layout and modern custom Tailwind components for a clean user experience across devices[cite: 2, 18].
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+Ensure you have Node.js installed on your machine:
+* [Node.js](https://nodejs.org/) (v16 or higher)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/dev-stack.git](https://github.com/rafibliss/Assignment-5.git)
