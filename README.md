@@ -6,16 +6,16 @@ A modern, interactive web application designed to help developers explore, compa
 
 ## 📌 About The Project
 
-**Dev Stack** is an intuitive platform where developers can browse various technologies, frameworks, databases, and tools across different categories[cite: 8]. Users can compare specs, levels, and ratings, and dynamically assemble their custom tech stack with a single click[cite: 4, 8].
+**Dev Stack** is an intuitive platform where developers can browse various technologies, frameworks, databases, and tools across different categories[cite: 8]. Users can compare specs, levels, and ratings, and dynamically assemble their custom tech stack with a single click.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React.js[cite: 2]
-* **Language:** TypeScript[cite: 2]
-* **Styling:** Tailwind CSS[cite: 2]
-* **Build Tool:** Vite[cite: 14]
+* **Frontend:** React.js
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Build Tool:** Vite
 
 ---
 
