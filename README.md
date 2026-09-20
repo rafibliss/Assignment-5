@@ -23,7 +23,7 @@ A modern, interactive web application designed to help developers explore, compa
 
 1. **Interactive Stack Builder**: Seamlessly add or remove frontend, backend, and database tools to your personalized stack sidebar in real time.
 2. **Duplicate Prevention & Smart Controls**: Prevents adding duplicate items to your stack while dynamically disabling the "Add to Stack" button with visual feedback once selected.
-3. **Dynamic Responsive Layout**: Built with a sleek 12-column grid layout and modern custom Tailwind components for a clean user experience across devices[cite: 2, 18].
+3. **Dynamic Responsive Layout**: Built with a sleek 12-column grid layout and modern custom Tailwind components for a clean user experience across devices.
 
 ---
 
