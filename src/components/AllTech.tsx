@@ -23,9 +23,9 @@ const AllTech = ({ technologies }) => {
 
                 {
                     dataTech.map((technology) => {
-
+                        const isAdded = selectedStack.some((item) => item.id === technology.id);
                         return (
-                            <TechCards technology={technology} onAddToStack={() => handleAddToStack(technology)}></TechCards>
+                            <TechCards technology={technology} onAddToStack={() => handleAddToStack(technology)} isAdded={isAdded}></TechCards>
                         )
 
 

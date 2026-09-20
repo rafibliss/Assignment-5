@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TechCards = ({ technology, onAddToStack }) => {
+const TechCards = ({ technology, onAddToStack, isAdded }) => {
     return (
         <div className="w-full max-w-[340px] bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between ">
             <div className="flex items-center justify-between mb-4">
@@ -33,8 +33,15 @@ const TechCards = ({ technology, onAddToStack }) => {
             </div>
 
 
-            <button className="w-full py-3 bg-[#0D111D] hover:bg-slate-800 text-white font-medium text-sm rounded-xl transition-colors" onClick={onAddToStack}>
-                Add to Stack
+            <button
+                onClick={onAddToStack}
+                disabled={isAdded}
+                className={`w-full py-3 font-medium text-sm rounded-xl transition-colors ${isAdded
+                    ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                    : 'bg-[#0D111D] hover:bg-slate-800 text-white'
+                    }`}
+            >
+                {isAdded ? 'Added to Stack' : 'Add to Stack'}
             </button>
         </div>
     );
