@@ -48,11 +48,11 @@ Ensure you have Node.js installed on your machine:
 
 
 ### i. What is JSX, and why is it used in React?
-JSX stands for JavaScript XML[cite: 16]. It lets us write HTML-like markup directly inside our JavaScript/TypeScript code[cite: 16]. React uses it because it makes component layout and logic much easier to read and write without needing to manually manipulate the DOM.
+JSX stands for JavaScript XML. It lets us write HTML-like markup directly inside our JavaScript/TypeScript code. React uses it because it makes component layout and logic much easier to read and write without needing to manually manipulate the DOM.
 
 ### ii. What is the difference between props and state?
 * **Props** are read-only data passed down from a parent component to a child component (like function arguments). 
-* **State** is dynamic data managed *inside* a component that can change over time based on user interactions[cite: 16]. When state changes, React re-renders the component to update the UI.
+* **State** is dynamic data managed *inside* a component that can change over time based on user interactions. When state changes, React re-renders the component to update the UI.
 
 ### iii. What does the `useState` hook do, and where did you use it in this project?
 `useState` tells React to track a piece of variable data that can change and trigger a UI update when updated. In this project, I used it inside `AllTech.tsx` as `const [selectedStack, setSelectedStack] = useState([])` to store and manage the list of technologies added to "Your Stack".
