@@ -48,24 +48,24 @@ Ensure you have Node.js installed on your machine:
 
 
 ### i. What is JSX, and why is it used in React?
-JSX stands for JavaScript XML[cite: 16]. It lets us write HTML-like markup directly inside our JavaScript/TypeScript code[cite: 16]. React uses it because it makes component layout and logic much easier to read and write without needing to manually manipulate the DOM[cite: 16].
+JSX stands for JavaScript XML[cite: 16]. It lets us write HTML-like markup directly inside our JavaScript/TypeScript code[cite: 16]. React uses it because it makes component layout and logic much easier to read and write without needing to manually manipulate the DOM.
 
 ### ii. What is the difference between props and state?
-* **Props** are read-only data passed down from a parent component to a child component (like function arguments)[cite: 16]. 
-* **State** is dynamic data managed *inside* a component that can change over time based on user interactions[cite: 16]. When state changes, React re-renders the component to update the UI[cite: 16].
+* **Props** are read-only data passed down from a parent component to a child component (like function arguments). 
+* **State** is dynamic data managed *inside* a component that can change over time based on user interactions[cite: 16]. When state changes, React re-renders the component to update the UI.
 
 ### iii. What does the `useState` hook do, and where did you use it in this project?
-`useState` tells React to track a piece of variable data that can change and trigger a UI update when updated[cite: 10, 16]. In this project, I used it inside `AllTech.tsx` as `const [selectedStack, setSelectedStack] = useState([])` to store and manage the list of technologies added to "Your Stack"[cite: 10, 16].
+`useState` tells React to track a piece of variable data that can change and trigger a UI update when updated. In this project, I used it inside `AllTech.tsx` as `const [selectedStack, setSelectedStack] = useState([])` to store and manage the list of technologies added to "Your Stack".
 
 ### iv. What does the `useEffect` hook do, and why did you need it to load the JSON data?
-`useEffect` handles side effects in React, such as fetching data from an external file or API after the component mounts on the screen[cite: 16]. It ensures data fetching happens asynchronously without blocking the UI rendering process[cite: 16].
+`useEffect` handles side effects in React, such as fetching data from an external file or API after the component mounts on the screen. It ensures data fetching happens asynchronously without blocking the UI rendering process.
 
 ### v. Why does every item in a `.map()` list need a unique `key` prop?
-React needs unique keys to track which specific items in a list have changed, been added, or been removed[cite: 10, 16]. This helps React update only the affected items in the DOM rather than re-rendering the entire list[cite: 10, 16].
+React needs unique keys to track which specific items in a list have changed, been added, or been removed. This helps React update only the affected items in the DOM rather than re-rendering the entire list.
 
 ### vi. What is conditional rendering? Show one place you used it.
-Conditional rendering means showing or hiding UI elements based on a specific condition[cite: 11, 16]. In `SelectedCard.tsx`, I used a ternary operator to render an empty state message when `selectedStack.length === 0`, or display the list of cards when items exist[cite: 11, 16].
+Conditional rendering means showing or hiding UI elements based on a specific condition[cite: 11, 16]. In `SelectedCard.tsx`, I used a ternary operator to render an empty state message when `selectedStack.length === 0`, or display the list of cards when items exist.
 
 ### vii. How do you pass data from parent to child, and how does child send something back?
-* **Parent to Child:** You pass data down directly as props (e.g., `<SelectedCard selectedStack={selectedStack} />`)[cite: 10].
-* **Child to Parent:** The parent passes a callback function down as a prop (e.g., `onRemove={handleRemove}`), and the child calls that function with data when an event occurs[cite: 10, 11].
+* **Parent to Child:** You pass data down directly as props (e.g., `<SelectedCard selectedStack={selectedStack} />`).
+* **Child to Parent:** The parent passes a callback function down as a prop (e.g., `onRemove={handleRemove}`), and the child calls that function with data when an event occurs.
