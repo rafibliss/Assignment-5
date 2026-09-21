@@ -1,17 +1,23 @@
 import React, { use, useState } from 'react';
 import TechCards from './TechCards';
 import SelectedCard from './SelectedCard';
+import type { Technology } from '../Types/type';
 
-const AllTech = ({ technologies }) => {
+
+interface TechProps {
+    technologies: Promise<Technology[]>;
+}
+
+const AllTech = ({ technologies }: TechProps) => {
     const dataTech = use(technologies)
-    const [selectedStack, setSelectedStack] = useState([]);
-    const handleAddToStack = (tech) => {
+    const [selectedStack, setSelectedStack] = useState<Technology[]>([]);
+    const handleAddToStack = (tech: Technology) => {
 
         if (!selectedStack.some((item) => item.id === tech.id)) {
             setSelectedStack([...selectedStack, tech]);
         }
     };
-    const handleRemove = (id) => {
+    const handleRemove = (id: number | string) => {
         setSelectedStack(selectedStack.filter((item) => item.id !== id));
     };
     const handleRemoveAll = () => {

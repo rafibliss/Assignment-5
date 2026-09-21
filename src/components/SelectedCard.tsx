@@ -1,5 +1,12 @@
 import React from 'react';
 import { IoCloseSharp } from "react-icons/io5";
+import type { Technology } from '../Types/type';
+
+interface SelectedCardProps {
+    selectedStack: Technology[];
+    onRemove: (id: number | string) => void;
+    onRemoveAll: () => void;
+}
 
 
 const SelectedCard = ({ selectedStack, onRemove, onRemoveAll }) => {
