@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Nav from "./components/Nav"
 import Teachnologies from "./components/Technologies";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Teachnologies techPromise={techPromise}></Teachnologies>
       </Suspense>
       <Footer></Footer>
+      <ToastContainer />
 
     </>
   )

@@ -2,6 +2,7 @@ import { use, useState } from 'react';
 import TechCards from './TechCards';
 import SelectedCard from './SelectedCard';
 import type { Technology } from '../Types/type';
+import { toast } from 'react-toastify';
 
 
 interface TechProps {
@@ -13,8 +14,15 @@ const AllTech = ({ technologies }: TechProps) => {
     const [selectedStack, setSelectedStack] = useState<Technology[]>([]);
     const handleAddToStack = (tech: Technology) => {
 
-        if (!selectedStack.some((item) => item.id === tech.id)) {
+        const isDuplicate = selectedStack.some((item) => item.id === tech.id);
+
+        if (isDuplicate) {
+
+            toast.warning(`${tech.name} is already in your stack!`);
+        } else {
+
             setSelectedStack([...selectedStack, tech]);
+            toast.success(`Added ${tech.name} to your stack!`);
         }
     };
     const handleRemove = (id: number | string) => {
@@ -22,6 +30,7 @@ const AllTech = ({ technologies }: TechProps) => {
     };
     const handleRemoveAll = () => {
         setSelectedStack([]);
+        toast.error('Cleared all technologies from your stack!');
     };
     return (
         <div className='grid grid-cols-12'>
