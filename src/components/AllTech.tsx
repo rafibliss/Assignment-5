@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import { use, useState } from 'react';
 import TechCards from './TechCards';
 import SelectedCard from './SelectedCard';
 import type { Technology } from '../Types/type';

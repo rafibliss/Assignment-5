@@ -1,4 +1,4 @@
-import React from 'react';
+
 import AllTech from './AllTech';
 import type { Technology } from '../Types/type';
 
