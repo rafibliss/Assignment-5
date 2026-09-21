@@ -33,8 +33,8 @@ const AllTech = ({ technologies }: TechProps) => {
         toast.error('Cleared all technologies from your stack!');
     };
     return (
-        <div className='grid grid-cols-12'>
-            <div className='grid grid-cols-3 mt-7.5 gap-4 col-span-9'>
+        <div className='flex flex-col lg:grid lg:grid-cols-12 gap-6 px-4 lg:px-0'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-7.5 gap-4 lg:col-span-9'>
 
                 {
                     dataTech.map((technology) => {
@@ -49,7 +49,7 @@ const AllTech = ({ technologies }: TechProps) => {
                 }
 
             </div>
-            <div className='col-span-3 mt-7.5 ml-4'>
+            <div className='lg:col-span-3 mt-7.5 lg:ml-4 w-full'>
                 <SelectedCard selectedStack={selectedStack} onRemove={handleRemove}
                     onRemoveAll={handleRemoveAll}></SelectedCard>
             </div>
