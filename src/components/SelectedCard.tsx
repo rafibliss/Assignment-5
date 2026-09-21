@@ -11,7 +11,7 @@ interface SelectedCardProps {
 
 const SelectedCard = ({ selectedStack, onRemove, onRemoveAll }: SelectedCardProps) => {
     return (
-        <div className="w-full bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
+        <div className="w-full bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-95">
             <div>
 
                 <h2 className="text-xl font-bold text-slate-900">Your Stack</h2>
@@ -22,7 +22,7 @@ const SelectedCard = ({ selectedStack, onRemove, onRemoveAll }: SelectedCardProp
 
                 <div className="space-y-3">
                     {selectedStack.length === 0 ? (
-                        <p className="text-xs text-slate-400 italic border border-gray-400 border-dashed rounded-2xl   p-[80px]">Your Stack is empty.</p>
+                        <p className="text-xs text-slate-400 italic border border-gray-400 border-dashed rounded-2xl   p-20">Your Stack is empty.</p>
                     ) : (
                         selectedStack.map((item) => (
                             <div

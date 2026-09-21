@@ -25,7 +25,7 @@ const AllTech = ({ technologies }: TechProps) => {
     };
     return (
         <div className='grid grid-cols-12'>
-            <div className='grid grid-cols-3 mt-[30px] gap-4 col-span-9'>
+            <div className='grid grid-cols-3 mt-7.5 gap-4 col-span-9'>
 
                 {
                     dataTech.map((technology) => {
@@ -40,7 +40,7 @@ const AllTech = ({ technologies }: TechProps) => {
                 }
 
             </div>
-            <div className='col-span-3 mt-[30px] ml-4'>
+            <div className='col-span-3 mt-7.5 ml-4'>
                 <SelectedCard selectedStack={selectedStack} onRemove={handleRemove}
                     onRemoveAll={handleRemoveAll}></SelectedCard>
             </div>

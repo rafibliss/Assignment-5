@@ -4,7 +4,7 @@ import logo from '../assets/logo-text.png'
 const Nav = () => {
     return (
         <div className='border-b border-gray-100'>
-            <div className='flex justify-between items-center py-[13px] container mx-auto '>
+            <div className='flex justify-between items-center py-3.25 container mx-auto '>
                 <img src={logo} alt="" />
 
                 <ul className='flex justify-between gap-6 items-center font-semibold'>
@@ -16,7 +16,7 @@ const Nav = () => {
                 </ul>
                 <div className='flex justify-between gap-4 items-center font-semibold '>
                     <button className='text-gray-700'>Sign In</button>
-                    <button className='border bg-[#DB2777] text-white rounded-full py-[5px] px-[12px]'>Sign Up</button>
+                    <button className='border bg-[#DB2777] text-white rounded-full py-1.25 px-3'>Sign Up</button>
                 </div >
 
             </div>

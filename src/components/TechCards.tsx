@@ -9,7 +9,7 @@ interface TechCardsProps {
 
 const TechCards = ({ technology, onAddToStack, isAdded }: TechCardsProps) => {
     return (
-        <div className="w-full max-w-[340px] bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between ">
+        <div className="w-full max-w-85 bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between ">
             <div className="flex items-center justify-between mb-4">
                 <div className="w-10 h-10 flex items-center justify-center">
                     <img src={technology.icon} alt="" className="w-full h-full object-contain" />
